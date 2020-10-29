@@ -1,0 +1,16 @@
+.portfolio-container{
+    height: 140vh;
+}
+
+.card img {
+    height: 250px;
+}
+
+.project h2 {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+    border-bottom: 1px solid purple;
+  }
