@@ -1,7 +1,12 @@
+.active-nav {
+    border-bottom: 2px solid purple;
+  }
 
   .navbar {
     width: 100%;
-    height: 60px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
     
   }
   .nav-link:hover{

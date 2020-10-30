@@ -7,7 +7,7 @@ const Achievement = () => {
     return (
        <section className="bg-secondary">
              <Navbar/>
-            <div className="portfolio-container text-center mt-5 pt-5">
+            <div className="portfolio-container text-center text-light mt-5 pt-5">
                 <h1>Achievement Coming soon......</h1>
             </div>
              <Footer/>

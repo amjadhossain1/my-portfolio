@@ -7,9 +7,9 @@ const Blog = () => {
     return (
         <section className="bg-secondary">
                 <Navbar/>
-                <div className="portfolio-container text-center mt-5 pt-5">
-                <h1>Blog Coming soon......</h1>
-            </div>
+                <div className="portfolio-container text-center text-light mt-5 pt-5">
+                    <h1>Blog Coming soon......</h1>
+                </div>
                 <Footer/>
         </section>
     );

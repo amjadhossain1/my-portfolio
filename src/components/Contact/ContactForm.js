@@ -1,11 +1,17 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
     const { register, handleSubmit } = useForm();
-  const onSubmit = data => {
-      console.log(data);
-    alert(JSON.stringify(data));
+  const onSubmit = data => {   
+    emailjs.send('amjad1233','template_tjeua8g', data, 'user_JWuxrUCS5o8InKExgxmRF')
+    .then((response) => {
+       console.log('SUCCESS!', response.status, response.text);
+       alert('Thank you');
+    }, (err) => {
+       console.log('FAILED...', err);
+    });
   };
 
     return (
@@ -15,7 +21,7 @@ const ContactForm = () => {
                 <form onSubmit={handleSubmit(onSubmit)}>
                    <div className="row">
                    <div className="col-md-6">                    
-                        <input name="firstName" placeholder="First Name" ref={register} />
+                        <input name="name" placeholder="First Name" ref={register} />
                     </div>
                     <br/>
                     <div className="col-md-6">                   
@@ -28,8 +34,8 @@ const ContactForm = () => {
                     </div>
                     <br/>
                     <div>                  
-                        <textarea 
-                            name="massage"
+                        <textarea                         
+                            name="message"
                             placeholder="Massage me"
                             type="text"
                             ref={register}

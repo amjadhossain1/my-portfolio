@@ -9,7 +9,7 @@ const Contact = () => {
         <section className="bg-secondary">
                 <Navbar/>
             <div className="portfolio-container">               
-                <ContactForm/>
+                <ContactForm/>               
             </div>
                 <Footer/>
         </section>
